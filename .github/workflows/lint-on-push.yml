@@ -1,14 +1,13 @@
-name: Lint and check formatting
+name: Lint on push
 
 on:
   push:
     branches:
       - new
-  pull_request:
 
 jobs:
   lint:
-    name: Run pre-commit
+    name: The lint job
     runs-on: ubuntu-latest
     steps:
 
